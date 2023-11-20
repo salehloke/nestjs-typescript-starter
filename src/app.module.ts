@@ -4,7 +4,9 @@ import { AppService } from './app.service';
 import { TodosModule } from './todos/todos.module';
 
 @Module({
-  imports: [TodosModule],
+  imports: [TodosModule,
+    MongooseModule.forRoot('mongodb://localhost/nest'
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
