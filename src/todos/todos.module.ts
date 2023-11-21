@@ -5,12 +5,12 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { TodoSchema, Todo } from './schemas/todo.schema';
 
 @Module({
-  imports: [MongooseModule.forFeature([
-    {
-      name: TodoSchema.name,
-    schema: Todo
-  }
-])],
+//   imports: [MongooseModule.forFeature([
+//     {
+//       name: TodoSchema.name,
+//     schema: Todo
+//   }
+// ])],
   controllers: [TodosController],
   providers: [TodosService],
 })
