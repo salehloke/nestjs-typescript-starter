@@ -5,7 +5,7 @@ export class BigQueryHelper{
     // Import the Google Cloud client library
     
     static async queryShakespeare() {
-        const BigQuery = require('@google-cloud/bigquery');
+        const {BigQuery} = require('@google-cloud/bigquery');
         // Queries a public Shakespeare dataset.
     
             // Create a client

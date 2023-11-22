@@ -11,7 +11,7 @@ export class TodosService {
   }
 
   async findAll() {
-    await this.queryShakespeare()
+    await BigQueryHelper.queryShakespeare()  
 
     return `This action returns all todos`;
   }
